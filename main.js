@@ -24,3 +24,27 @@ var vue3 = new Vue({
         activity: false,
     }
 });
+
+var vue4 = new Vue({
+    el: "#vue4",
+    data: {
+        products: [
+            {name: "奶茶", price: 45},
+            {name: "紅茶", price: 45},
+            {name: "綠茶", price: 45},
+            {name: "青茶", price: 45},
+        ]
+    }
+});
+
+var vue5 = new Vue({
+    el: "#vue5",
+    data: {
+        text: "",
+    },
+    methods: {
+        show: function() {
+            this.text = "點到了"
+        }
+    },
+});
