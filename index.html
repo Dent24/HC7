@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>定義渲染區域</h1>
+    <div id="vue1">
+        {{ text }}
+        {{ a }}
+        {{ text+a }}
+
+        <h2>
+            {{ text }}
+            {{ a+b }}
+        </h2>
+    </div>
+
+    <h1>將資料寫在屬性內</h1>
+    <div id="vue2">
+        <h2 v-bind:align="aligment">標題二</h2>
+        <a v-bind:href="yahoo">奇摩</a>
+    </div>
+
+    <h1>判斷式</h1>
+    <div id="vue3">
+        <p v-if="test">我是一段文字</p>
+
+        <h2>活動特價</h2>
+        <a href="#" v-if="activity">點我前往</a>
+        <span v-else="activity">活動已結束</span>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
