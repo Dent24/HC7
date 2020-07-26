@@ -41,10 +41,27 @@ var vue5 = new Vue({
     el: "#vue5",
     data: {
         text: "",
+        count: 0,
     },
     methods: {
         show: function() {
             this.text = "點到了"
-        }
+        },
+        add: function() {
+            this.count++;
+        },
+        sub: function() {
+            this.count--;
+        },
+        change: function() {
+            this.msg = "點到了";
+        },
+    },
+});
+
+var vue6 = new Vue({
+    el: "#vue6",
+    data: {
+        name: ""
     },
 });

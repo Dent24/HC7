@@ -47,6 +47,18 @@
     <h1></h1>
     <div id="vue5">
         <h2 v-on:click="show">標題二 {{ text }}</h2>
+
+        <div>{{ count }} 
+            <span v-on:click="sub">-</span> 
+            <span v-on:click="add">+</span>
+        </div>
+
+        <h3 @click="change">點我 {{ msg }}</h3>
+    </div>
+
+    <div id="vue6">
+        <label>請輸入名字</label><input type="text" v-model="name">
+        <p>{{ name }} 你好</p>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
